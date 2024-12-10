@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Logo } from './header/Logo'
+import Logo from './header/Logo'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
@@ -8,7 +8,7 @@ import authService from '../appwrite/auth'
 import { useForm } from 'react-hook-form'
 import Input from './Input'
 import Button from './Button'
-function SignUp() {
+function Signup() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const { register, handleSubmit } = useForm();
@@ -91,4 +91,4 @@ function SignUp() {
     )
 }
 
-export default SignUp
+export default Signup

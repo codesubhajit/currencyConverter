@@ -1,9 +1,10 @@
 import React, { useId } from 'react'
-const id = useId();
+
 const Input = React.forwardRef(function Input({ label,
     type = "text",
     className = "w-full",
     ...props }, ref) {
+        const id = useId();
     return (
         <div className=''>
             {label && (<label className='inline-block mb-1 pl-1' htmlFor={id}>{label}</label>)}
